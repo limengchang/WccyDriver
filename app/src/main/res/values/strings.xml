@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">无车承运-司机端</string>
+
+    <string name="phone_number">客服电话：0735-2668988</string>
+    <string name="str_kfdh">客服电话：</string>
+    <string name="str_kfdh_number">0735-2668988</string>
+    <string name="str_bank_slh">****   ****   ****</string>
+    <string name="setting">设置</string>
+
+</resources>

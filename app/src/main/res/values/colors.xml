@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#2C5BB3</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--<color name="bacolor">#FF7200</color>-->
+    <color name="bacolor">#2C5BB3</color>
+    <color name="memoney">#FF5C00</color>
+    <color name="yellow">#ffff00</color>
+    <color name="red">#ff3333</color>
+    <color name="red1">#FF2A00</color>
+    <color name="qianhui">#dbdbdb</color>
+    <color name="hui_eee">#eeeeee</color>
+    <color name="hui_3e">#3e3e3e</color>
+    <color name="ededed">#EDEDED</color>
+    <color name="hui_3f">#3f3f3f</color>
+    <color name="hui_ef">#efefef</color>
+    <color name="hui_zc">#9A9DA2</color>
+    <color name="gray">#808080</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#050505</color>
+    <color name="blue">#015CCE</color>
+    <color name="somber">#666666</color>
+    <color name="jetblack">#333333</color>
+    <color name="yellowish">#ED9210</color>
+    <color name="grayish">#CCCCCC</color>
+    <color name="highhui">#8B5F65</color>
+    <color name="bannercolor">#F2F2F2</color>
+    <color name="somber1">#4D4D4D</color>
+    <color name="green">#38C058</color>
+    <color name="billitemcolor">#1A1A1A</color>
+    <color name="bottom">#E6E6E6</color>
+    <color name="mebanner">#F3E4C1</color>
+    <color name="member">#FF7200</color>
+    <color name="phonecolor">#2B88E7</color>
+    <color name="gray1">#999999</color>
+    <color name="background">#FFFFFF</color>
+    <color name="split_line">#11112233</color>
+    <color name="text1">#59B29C</color>
+    <color name="text2">#333333</color>
+
+    <color name="color1">#F0F0F0</color>
+    <color name="color2">#FFFFFF</color>
+    <color name="color3">#B0B0B0</color>
+    <color name="color4">#666666</color>
+    <color name="color5">#57C5E8</color>
+</resources>

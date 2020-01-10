@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/title_include"
+        layout="@layout/title_window_top" />
+
+    <LinearLayout
+        android:id="@+id/layout_mm_ty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_include"
+        android:background="@color/hui_eee"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/icon_zc_ts"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="6-20位至少包含数字/字号/符号中的两种"
+            android:textColor="@color/hui_3e" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_forget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_mm_ty"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.bfbyxx.wccydriver.wheel.ClearEditText
+            android:id="@+id/et_forget_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="请输入手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/somber"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <com.bfbyxx.wccydriver.wheel.ClearEditText
+                android:id="@+id/et_forget_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/bg_edittext"
+                android:hint="输入验证码"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="@color/somber"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_forget_getCode"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="输入新密码"
+                android:textColor="@color/jetblack"
+                android:textSize="15sp" />
+
+            <com.bfbyxx.wccydriver.wheel.ClearEditText
+                android:id="@+id/et_forget_new_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="请输入新密码"
+                android:inputType="textPassword"
+                android:textColor="@color/somber"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="确认新密码"
+                android:textColor="@color/jetblack"
+                android:textSize="15sp" />
+
+            <com.bfbyxx.wccydriver.wheel.ClearEditText
+                android:id="@+id/et_forget_new_pwd_sure"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="请确认新密码"
+                android:inputType="textPassword"
+                android:textColor="@color/somber"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit_forget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+    <!-- 11111111111111111111111-->
+    <LinearLayout
+        android:id="@+id/layout_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_mm_ty"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="原密码"
+                android:textColor="@color/jetblack"
+                android:textSize="15sp" />
+
+            <com.bfbyxx.wccydriver.wheel.ClearEditText
+                android:id="@+id/et_yuan_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="请输入原密码"
+                android:inputType="textPassword"
+                android:textColor="@color/somber"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="新密码"
+                android:textColor="@color/jetblack"
+                android:textSize="15sp" />
+
+            <com.bfbyxx.wccydriver.wheel.ClearEditText
+                android:id="@+id/et_new_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="请输入新密码"
+                android:inputType="textPassword"
+                android:textColor="@color/somber"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="确认新密码"
+                android:textColor="@color/jetblack"
+                android:textSize="15sp" />
+
+            <com.bfbyxx.wccydriver.wheel.ClearEditText
+                android:id="@+id/et_new_pwd_sure"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="请确认新密码"
+                android:inputType="textPassword"
+                android:textColor="@color/somber"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_shape"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_forgetpwd_rt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginTop="10dp"
+            android:text="那啥? 原密码忘了!"
+            android:textColor="@drawable/selector_textcolor_bg" />
+    </LinearLayout>
+</RelativeLayout>

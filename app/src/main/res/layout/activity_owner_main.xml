@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/broker_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_main"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/qianhui" />
+
+        <RadioGroup
+            android:id="@+id/broker_bottomMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/qianhui"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/broker_rb_fahuo"
+                style="@style/BottomMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/shap_list_btn"
+                android:text="配货大厅" />
+
+            <RadioButton
+                android:id="@+id/broker_rb_dingdan"
+                style="@style/BottomMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/shap_alarm_btn"
+                android:text="运单管理" />
+
+            <RadioButton
+                android:id="@+id/broker_rb_me"
+                style="@style/BottomMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/shap_more_btn"
+                android:text="个人中心" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+</LinearLayout>
